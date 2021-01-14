@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-struct AppService {
+class AppService {
    
    private let session = URLSession(configuration: .default, delegate: nil, delegateQueue: nil)
    private let decoder = JSONDecoder()
@@ -22,9 +22,9 @@ struct AppService {
       request.httpMethod = "GET"
       AppService.log(request: request)
       return session.dataTaskPublisher(for: request)
-         .tryMap({ result -> [Deal] in
+         .tryMap({ [unowned self] result -> [Deal] in
             AppService.log(response: result.response as? HTTPURLResponse, data: result.data, error: nil)
-            return try decoder.decode([Deal].self, from: result.data)
+            return try self.decoder.decode([Deal].self, from: result.data)
          })
          .receive(on: DispatchQueue.main)
          .eraseToAnyPublisher()
@@ -35,9 +35,9 @@ struct AppService {
       request.httpMethod = "GET"
       AppService.log(request: request)
       return session.dataTaskPublisher(for: request)
-         .tryMap({ result -> [Store] in
+         .tryMap({ [unowned self] result -> [Store] in
             AppService.log(response: result.response as? HTTPURLResponse, data: result.data, error: nil)
-            return try decoder.decode([Store].self, from: result.data)
+            return try self.decoder.decode([Store].self, from: result.data)
          })
          .receive(on: DispatchQueue.main)
          .eraseToAnyPublisher()
@@ -50,9 +50,9 @@ struct AppService {
       request.httpMethod = "GET"
       AppService.log(request: request)
       return session.dataTaskPublisher(for: request)
-         .tryMap({ result -> DealLookup in
+         .tryMap({ [unowned self] result -> DealLookup in
             AppService.log(response: result.response as? HTTPURLResponse, data: result.data, error: nil)
-            return try decoder.decode(DealLookup.self, from: result.data)
+            return try self.decoder.decode(DealLookup.self, from: result.data)
          })
          .receive(on: DispatchQueue.main)
          .eraseToAnyPublisher()

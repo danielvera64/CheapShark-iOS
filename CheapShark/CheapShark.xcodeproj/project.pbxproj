@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1132691625B0D81B008311A4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132691525B0D81B008311A4 /* DetailView.swift */; };
+		1132691B25B0DC05008311A4 /* Test+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132691A25B0DC05008311A4 /* Test+Injection.swift */; };
+		1132692025B0DC52008311A4 /* TestAppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132691F25B0DC52008311A4 /* TestAppService.swift */; };
 		1162B30625B09E08000DD857 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162B30525B09E08000DD857 /* Store.swift */; };
 		1162B30B25B0A647000DD857 /* DealLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162B30A25B0A647000DD857 /* DealLookup.swift */; };
 		1162B31325B0A9C2000DD857 /* DealInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162B31225B0A9C2000DD857 /* DealInfoView.swift */; };
@@ -51,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		1132691525B0D81B008311A4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		1132691A25B0DC05008311A4 /* Test+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test+Injection.swift"; sourceTree = "<group>"; };
+		1132691F25B0DC52008311A4 /* TestAppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppService.swift; sourceTree = "<group>"; };
 		1162B30525B09E08000DD857 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		1162B30A25B0A647000DD857 /* DealLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealLookup.swift; sourceTree = "<group>"; };
 		1162B31225B0A9C2000DD857 /* DealInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealInfoView.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 			children = (
 				117A97BF25AF32150053E742 /* CheapSharkTests.swift */,
 				117A97C125AF32150053E742 /* Info.plist */,
+				1132691A25B0DC05008311A4 /* Test+Injection.swift */,
+				1132691F25B0DC52008311A4 /* TestAppService.swift */,
 			);
 			path = CheapSharkTests;
 			sourceTree = "<group>";
@@ -397,6 +403,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				117A97C025AF32150053E742 /* CheapSharkTests.swift in Sources */,
+				1132691B25B0DC05008311A4 /* Test+Injection.swift in Sources */,
+				1132692025B0DC52008311A4 /* TestAppService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
