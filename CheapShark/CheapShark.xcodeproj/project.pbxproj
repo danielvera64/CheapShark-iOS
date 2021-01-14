@@ -3,15 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1132691625B0D81B008311A4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132691525B0D81B008311A4 /* DetailView.swift */; };
 		1162B30625B09E08000DD857 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162B30525B09E08000DD857 /* Store.swift */; };
 		1162B30B25B0A647000DD857 /* DealLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162B30A25B0A647000DD857 /* DealLookup.swift */; };
 		1162B31325B0A9C2000DD857 /* DealInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162B31225B0A9C2000DD857 /* DealInfoView.swift */; };
 		1162B31B25B0AAE1000DD857 /* DealInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162B31A25B0AAE1000DD857 /* DealInfoViewModel.swift */; };
 		1162B32625B0ADC1000DD857 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162B32525B0ADC1000DD857 /* LoadingView.swift */; };
+		1162B32C25B0D36F000DD857 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 1162B32B25B0D36F000DD857 /* Resolver */; };
+		1162B33125B0D391000DD857 /* Resolver+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162B33025B0D391000DD857 /* Resolver+Extension.swift */; };
 		117A97AE25AF32140053E742 /* CheapSharkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A97AD25AF32140053E742 /* CheapSharkApp.swift */; };
 		117A97B025AF32140053E742 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A97AF25AF32140053E742 /* MainTabView.swift */; };
 		117A97B225AF32140053E742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117A97B125AF32140053E742 /* Assets.xcassets */; };
@@ -47,11 +50,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1132691525B0D81B008311A4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		1162B30525B09E08000DD857 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		1162B30A25B0A647000DD857 /* DealLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealLookup.swift; sourceTree = "<group>"; };
 		1162B31225B0A9C2000DD857 /* DealInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealInfoView.swift; sourceTree = "<group>"; };
 		1162B31A25B0AAE1000DD857 /* DealInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealInfoViewModel.swift; sourceTree = "<group>"; };
 		1162B32525B0ADC1000DD857 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		1162B33025B0D391000DD857 /* Resolver+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Extension.swift"; sourceTree = "<group>"; };
 		117A97AA25AF32140053E742 /* CheapShark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheapShark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		117A97AD25AF32140053E742 /* CheapSharkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapSharkApp.swift; sourceTree = "<group>"; };
 		117A97AF25AF32140053E742 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -80,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1162B32C25B0D36F000DD857 /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +177,7 @@
 				117A97AF25AF32140053E742 /* MainTabView.swift */,
 				117A982525AF5C460053E742 /* SearchBar.swift */,
 				1162B32525B0ADC1000DD857 /* LoadingView.swift */,
+				1132691525B0D81B008311A4 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +230,7 @@
 		117A981125AF54DB0053E742 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1162B33025B0D391000DD857 /* Resolver+Extension.swift */,
 				117A981225AF54ED0053E742 /* String+Extension.swift */,
 			);
 			path = Extensions;
@@ -244,6 +252,9 @@
 			dependencies = (
 			);
 			name = CheapShark;
+			packageProductDependencies = (
+				1162B32B25B0D36F000DD857 /* Resolver */,
+			);
 			productName = CheapShark;
 			productReference = 117A97AA25AF32140053E742 /* CheapShark.app */;
 			productType = "com.apple.product-type.application";
@@ -315,6 +326,9 @@
 				Base,
 			);
 			mainGroup = 117A97A125AF32140053E742;
+			packageReferences = (
+				1162B32A25B0D36F000DD857 /* XCRemoteSwiftPackageReference "Resolver" */,
+			);
 			productRefGroup = 117A97AB25AF32140053E742 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +374,7 @@
 			files = (
 				117A980425AF48030053E742 /* DealListRequest.swift in Sources */,
 				117A981325AF54ED0053E742 /* String+Extension.swift in Sources */,
+				1132691625B0D81B008311A4 /* DetailView.swift in Sources */,
 				117A97B025AF32140053E742 /* MainTabView.swift in Sources */,
 				1162B30B25B0A647000DD857 /* DealLookup.swift in Sources */,
 				1162B31B25B0AAE1000DD857 /* DealInfoViewModel.swift in Sources */,
@@ -371,6 +386,7 @@
 				1162B30625B09E08000DD857 /* Store.swift in Sources */,
 				117A97F625AF45EA0053E742 /* Deal.swift in Sources */,
 				117A982625AF5C460053E742 /* SearchBar.swift in Sources */,
+				1162B33125B0D391000DD857 /* Resolver+Extension.swift in Sources */,
 				117A97EC25AF40F00053E742 /* DealCellView.swift in Sources */,
 				117A97E325AF405E0053E742 /* DealsListView.swift in Sources */,
 			);
@@ -697,6 +713,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1162B32A25B0D36F000DD857 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1162B32B25B0D36F000DD857 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1162B32A25B0D36F000DD857 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 117A97A225AF32140053E742 /* Project object */;
 }

@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import Resolver
 
-struct DealInfoView: View {
+struct DealInfoView: View, Resolving {
    
-   @ObservedObject var viewModel = DealInfoViewModel()
+   @ObservedObject var viewModel: DealInfoViewModel = Resolver.resolve()
    
    @State var dealId: String
    @State var store: String
@@ -18,11 +19,13 @@ struct DealInfoView: View {
       ZStack {
          
          if let info = viewModel.dealInfo {
-            DetailView(dealInfo: info, store: store, metacriticUrl: viewModel.getMetacriticLink())
+            resolver.resolve(DetailView.self, args: ["dealInfo": info,
+                                                     "store": store,
+                                                     "metacriticUrl": viewModel.getMetacriticLink()])
          }
          
          if viewModel.isLoading {
-            LoadingView(backgroundColor: .clear)
+            Resolver.resolve(LoadingView.self, args: Color.clear)
          }
       }
       .padding()
@@ -30,58 +33,6 @@ struct DealInfoView: View {
          viewModel.getDealInfo(id: dealId)
       }
       .navigationBarTitle("", displayMode: .inline)
-   }
-}
-
-struct DetailView: View {
-   
-   @State var dealInfo: DealLookup
-   @State var store: String
-   @State var metacriticUrl: URL
-   
-   var body: some View {
-      HStack {
-         VStack(alignment: .leading, spacing: 0) {
-            Text(dealInfo.gameInfo?.name ?? "")
-               .font(.title)
-               .padding(.bottom, 20)
-            
-            HStack {
-               Text("sale_price".localized)
-                  .font(.title2)
-               
-               Text("$\(dealInfo.gameInfo?.salePrice ?? "0")")
-                  .font(.title2)
-            }
-            
-            HStack {
-               Text("normal_price".localized)
-               
-               Text("$\(dealInfo.gameInfo?.retailPrice ?? "0")")
-            }
-            .padding(.bottom, 10)
-            
-            HStack {
-               Text("rating_title".localized)
-                  .font(.title2)
-               
-               Text("\(dealInfo.gameInfo?.steamRatingPercent ?? "0")%")
-                  .font(.title2)
-            }
-            
-            HStack {
-               Text(store.isEmpty ? "" : "store_title".localized)
-               
-               Text(store)
-            }
-            .padding(.bottom, 10)
-            
-            Link("metacritic_title".localized, destination: metacriticUrl)
-            
-            Spacer()
-         }
-         Spacer()
-      }
    }
 }
 

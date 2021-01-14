@@ -7,8 +7,9 @@
 
 import Foundation
 import Combine
+import Resolver
 
-class DealsListViewModel: ObservableObject {
+class DealsListViewModel: ObservableObject, Resolving {
    
    @Published var searchText = ""
    @Published var dealList = [Deal]()
@@ -19,7 +20,8 @@ class DealsListViewModel: ObservableObject {
    
    private var pageSubject = CurrentValueSubject<Int, Never>(0)
    
-   private let service = AppService()
+   private lazy var service: AppService = resolver.resolve()
+   
    private var cancellable = Set<AnyCancellable>()
    
    init() {

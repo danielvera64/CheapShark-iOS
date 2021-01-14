@@ -7,10 +7,11 @@
 
 import Foundation
 import SwiftUI
+import Resolver
 
 struct DealsListView: View {
    
-   @ObservedObject var viewModel = DealsListViewModel()
+   @ObservedObject var viewModel: DealsListViewModel = Resolver.resolve()
    
    @State private var showingActionSheet = false
    
@@ -33,7 +34,7 @@ struct DealsListView: View {
             }
          }
          if viewModel.isLoading {
-            LoadingView(backgroundColor: .yellow)
+            Resolver.resolve(LoadingView.self, args: Color.yellow)
          }
       }
       .navigationTitle("list_deals".localized)

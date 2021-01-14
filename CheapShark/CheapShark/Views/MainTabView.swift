@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Resolver
 
 struct MainTabView: View {
    
@@ -13,7 +14,7 @@ struct MainTabView: View {
       TabView {
          
          NavigationView {
-            DealsListView()
+            Resolver.resolve() as DealsListView
          }
          .tabItem {
             Image(systemName: "dollarsign.circle.fill")

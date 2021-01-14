@@ -7,8 +7,9 @@
 
 import Foundation
 import Combine
+import Resolver
 
-class DealInfoViewModel: ObservableObject {
+class DealInfoViewModel: ObservableObject, Resolving {
    
    @Published var dealInfo: DealLookup?
    @Published var isLoading = false
@@ -16,7 +17,8 @@ class DealInfoViewModel: ObservableObject {
    
    var errorMessage: String = ""
    
-   private let service = AppService()
+   private lazy var service: AppService = resolver.resolve()
+   
    private var cancellable = Set<AnyCancellable>()
    
    private let metacriticBaseUrl = "https://www.metacritic.com/"

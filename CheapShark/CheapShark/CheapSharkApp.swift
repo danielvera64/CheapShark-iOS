@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Resolver
 
 @main
 struct CheapSharkApp: App {
    var body: some Scene {
       WindowGroup {
-         MainTabView()
+         Resolver.resolve() as MainTabView
       }
    }
 }
