@@ -1,0 +1,20 @@
+/* 
+  localizable.strings
+  CheapShark
+
+  Created by Daniel Vera on 13/1/21.
+  
+*/
+
+"deals_title" = "Deals";
+"sale_price" = "Sale price:";
+"normal_price" = "Normal price:";
+"rating_title" = "Rating:";
+"store_title" = "Store:";
+"list_deals" = "List of Deals";
+"search_title" = "Search ...";
+"cancel_title" = "Cancel";
+"loading_title" = "Loading...";
+"sort_deals_by" = "Sort Deals By:";
+"no_title" = "(Title not found)";
+"metacritic_title" = "Metacritic";
