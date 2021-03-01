@@ -18,3 +18,6 @@
 "sort_deals_by" = "Sort Deals By:";
 "no_title" = "(Title not found)";
 "metacritic_title" = "Metacritic";
+
+// ERRORS
+"general_error" = "Something went wrong. Please try again later.";

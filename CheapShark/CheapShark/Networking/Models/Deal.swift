@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Deal: Codable {
+public struct Deal: Codable {
    var title: String?
    var metacriticLink: String?
    var dealID: String?
