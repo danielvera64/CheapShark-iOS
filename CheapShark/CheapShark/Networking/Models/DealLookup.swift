@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DealLookup: Codable {
+public struct DealLookup: Codable {
    var gameInfo: DealGameInfo?
    var cheaperStores: [CheaperStore]?
    var cheapestPrice: CheapestPrice?

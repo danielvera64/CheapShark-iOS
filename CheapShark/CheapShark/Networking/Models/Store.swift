@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Store: Codable {
+public struct Store: Codable {
    var storeID: String?
    var storeName: String?
    var isActive: Int?
