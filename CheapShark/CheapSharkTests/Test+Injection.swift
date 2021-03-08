@@ -11,11 +11,12 @@ import Resolver
 @testable import CheapShark
 
 extension Resolver {
-   
-   static let testing = Resolver(parent: main)
-   
-   static func registerTestServices() {
-      root = testing
-      register(AppService.self) { TestAppService() }
-   }
+
+  static let testing = Resolver(parent: main)
+
+  static func registerTestServices() {
+    root = testing
+    register(StoreService.self) { StoreService(provider: NetworkProviderMock<StoreManagerProvider>()) }
+  }
+  
 }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1132691625B0D81B008311A4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132691525B0D81B008311A4 /* DetailView.swift */; };
 		1132691B25B0DC05008311A4 /* Test+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132691A25B0DC05008311A4 /* Test+Injection.swift */; };
-		1132692025B0DC52008311A4 /* TestAppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132691F25B0DC52008311A4 /* TestAppService.swift */; };
+		115EC54625F6AF0E0031BFD7 /* getStores.json in Resources */ = {isa = PBXBuildFile; fileRef = 11C7174225EEE39B004FD2F6 /* getStores.json */; };
 		1162B30625B09E08000DD857 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162B30525B09E08000DD857 /* Store.swift */; };
 		1162B30B25B0A647000DD857 /* DealLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162B30A25B0A647000DD857 /* DealLookup.swift */; };
 		1162B31325B0A9C2000DD857 /* DealInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162B31225B0A9C2000DD857 /* DealInfoView.swift */; };
@@ -21,7 +21,6 @@
 		117A97B025AF32140053E742 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A97AF25AF32140053E742 /* MainTabView.swift */; };
 		117A97B225AF32140053E742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117A97B125AF32140053E742 /* Assets.xcassets */; };
 		117A97B525AF32140053E742 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117A97B425AF32140053E742 /* Preview Assets.xcassets */; };
-		117A97C025AF32150053E742 /* CheapSharkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A97BF25AF32150053E742 /* CheapSharkTests.swift */; };
 		117A97CB25AF32150053E742 /* CheapSharkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A97CA25AF32150053E742 /* CheapSharkUITests.swift */; };
 		117A97E325AF405E0053E742 /* DealsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A97E225AF405E0053E742 /* DealsListView.swift */; };
 		117A97EC25AF40F00053E742 /* DealCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A97EB25AF40F00053E742 /* DealCellView.swift */; };
@@ -39,6 +38,10 @@
 		11A37B7025ED77D20011B8E3 /* DealManagerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A37B6F25ED77D20011B8E3 /* DealManagerProvider.swift */; };
 		11A37B7A25ED92980011B8E3 /* ParametersType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A37B7925ED92980011B8E3 /* ParametersType.swift */; };
 		11A37BCA25ED9A5E0011B8E3 /* DealService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A37BC925ED9A5D0011B8E3 /* DealService.swift */; };
+		11C7172325EEDAF9004FD2F6 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7172225EEDAF9004FD2F6 /* StoreTests.swift */; };
+		11C7172C25EEDB42004FD2F6 /* StoreServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7172B25EEDB42004FD2F6 /* StoreServiceMock.swift */; };
+		11C7173D25EEDC5A004FD2F6 /* NetworkProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7173C25EEDC5A004FD2F6 /* NetworkProviderMock.swift */; };
+		11C7174325EEE39B004FD2F6 /* getStores.json in Resources */ = {isa = PBXBuildFile; fileRef = 11C7174225EEE39B004FD2F6 /* getStores.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +64,6 @@
 /* Begin PBXFileReference section */
 		1132691525B0D81B008311A4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		1132691A25B0DC05008311A4 /* Test+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test+Injection.swift"; sourceTree = "<group>"; };
-		1132691F25B0DC52008311A4 /* TestAppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppService.swift; sourceTree = "<group>"; };
 		1162B30525B09E08000DD857 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		1162B30A25B0A647000DD857 /* DealLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealLookup.swift; sourceTree = "<group>"; };
 		1162B31225B0A9C2000DD857 /* DealInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealInfoView.swift; sourceTree = "<group>"; };
@@ -75,7 +77,6 @@
 		117A97B425AF32140053E742 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		117A97B625AF32140053E742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		117A97BB25AF32150053E742 /* CheapSharkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheapSharkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		117A97BF25AF32150053E742 /* CheapSharkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapSharkTests.swift; sourceTree = "<group>"; };
 		117A97C125AF32150053E742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		117A97C625AF32150053E742 /* CheapSharkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheapSharkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		117A97CA25AF32150053E742 /* CheapSharkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapSharkUITests.swift; sourceTree = "<group>"; };
@@ -96,6 +97,10 @@
 		11A37B6F25ED77D20011B8E3 /* DealManagerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealManagerProvider.swift; sourceTree = "<group>"; };
 		11A37B7925ED92980011B8E3 /* ParametersType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersType.swift; sourceTree = "<group>"; };
 		11A37BC925ED9A5D0011B8E3 /* DealService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealService.swift; sourceTree = "<group>"; };
+		11C7172225EEDAF9004FD2F6 /* StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
+		11C7172B25EEDB42004FD2F6 /* StoreServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreServiceMock.swift; sourceTree = "<group>"; };
+		11C7173C25EEDC5A004FD2F6 /* NetworkProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderMock.swift; sourceTree = "<group>"; };
+		11C7174225EEE39B004FD2F6 /* getStores.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getStores.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,10 +176,9 @@
 		117A97BE25AF32150053E742 /* CheapSharkTests */ = {
 			isa = PBXGroup;
 			children = (
-				117A97BF25AF32150053E742 /* CheapSharkTests.swift */,
-				117A97C125AF32150053E742 /* Info.plist */,
 				1132691A25B0DC05008311A4 /* Test+Injection.swift */,
-				1132691F25B0DC52008311A4 /* TestAppService.swift */,
+				117A97C125AF32150053E742 /* Info.plist */,
+				11C7172125EEDAAB004FD2F6 /* Networking */,
 			);
 			path = CheapSharkTests;
 			sourceTree = "<group>";
@@ -285,6 +289,33 @@
 				11A37BC925ED9A5D0011B8E3 /* DealService.swift */,
 			);
 			path = Deals;
+			sourceTree = "<group>";
+		};
+		11C7172125EEDAAB004FD2F6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				11C7174125EEE370004FD2F6 /* JsonMocks */,
+				11C7172A25EEDB30004FD2F6 /* Mocks */,
+				11C7172225EEDAF9004FD2F6 /* StoreTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		11C7172A25EEDB30004FD2F6 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				11C7172B25EEDB42004FD2F6 /* StoreServiceMock.swift */,
+				11C7173C25EEDC5A004FD2F6 /* NetworkProviderMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		11C7174125EEE370004FD2F6 /* JsonMocks */ = {
+			isa = PBXGroup;
+			children = (
+				11C7174225EEE39B004FD2F6 /* getStores.json */,
+			);
+			path = JsonMocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +429,7 @@
 			files = (
 				117A981C25AF551E0053E742 /* Localizable.strings in Resources */,
 				117A97B525AF32140053E742 /* Preview Assets.xcassets in Resources */,
+				115EC54625F6AF0E0031BFD7 /* getStores.json in Resources */,
 				117A97B225AF32140053E742 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +438,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C7174325EEE39B004FD2F6 /* getStores.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,9 +487,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				117A97C025AF32150053E742 /* CheapSharkTests.swift in Sources */,
 				1132691B25B0DC05008311A4 /* Test+Injection.swift in Sources */,
-				1132692025B0DC52008311A4 /* TestAppService.swift in Sources */,
+				11C7172C25EEDB42004FD2F6 /* StoreServiceMock.swift in Sources */,
+				11C7173D25EEDC5A004FD2F6 /* NetworkProviderMock.swift in Sources */,
+				11C7172325EEDAF9004FD2F6 /* StoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

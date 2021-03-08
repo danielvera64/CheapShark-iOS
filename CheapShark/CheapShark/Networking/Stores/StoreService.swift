@@ -7,9 +7,13 @@
 
 import Foundation
 
-public struct StoreService {
+public class StoreService {
 
-  public var provider = NetworkProvider<StoreManagerProvider>()
+  private let provider: NetworkProvider<StoreManagerProvider>
+
+  init(provider: NetworkProvider<StoreManagerProvider> = NetworkProvider<StoreManagerProvider>()) {
+    self.provider = provider
+  }
 
   public func getStores(completion: @escaping (Result<[Store], AppError>) -> Void) {
     provider.perform(.getStores, completionHandler: { result in

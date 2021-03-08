@@ -13,7 +13,7 @@ public struct HTTPResponse<T> {
   let response: URLResponse
 }
 
-public final class NetworkProvider<Target: AppTargetType>: NSObject, URLSessionDelegate {
+public class NetworkProvider<Target: AppTargetType>: NSObject, URLSessionDelegate {
 
   public lazy var session = URLSession(configuration: .default, delegate: self, delegateQueue: nil)
 
